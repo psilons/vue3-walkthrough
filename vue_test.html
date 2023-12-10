@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vue3 Test</title>
+        <link rel="icon" href="data:;base64,=">
+  </head>
+  <body>
+        <h1>Hello, World!</h1>
+		
+		<script src="https://unpkg.com/vue@3"></script>
+		
+		<div id="app">
+            <h1>How are you, {{name}}!</h1>
+        </div>
+
+        <script>
+            Vue.createApp({
+                data() {
+                    return {
+                        name: 'Skywalker'
+                    }
+                }
+            }).mount('#app')
+        </script>
+  </body>
+</html>
